@@ -15,8 +15,8 @@ application.use(
 
 // Set security & utilities
 application.use(helmet());
-application.use(json({ limit: '1b' }));
-application.use(urlencoded({ extended: false, limit: '1b' }));
+application.use(json({ limit: '100KB' }));
+application.use(urlencoded({ extended: false, limit: '100KB' }));
 
 // Route handlers
 application.use(routes);
